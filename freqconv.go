@@ -8,17 +8,17 @@ type Megahertz float64
 type Gigahertz float64
 
 func (h Hertz) String() string {
-	return fmt.Sprintf("%g Hz\n", h)
+	return fmt.Sprintf("%g Hz", h)
 }
 
 func (k Kilohertz) String() string {
-	return fmt.Sprintf("%g kHz\n", k)
+	return fmt.Sprintf("%g kHz", k)
 }
 
 func (MHz Megahertz) String() string {
-	return fmt.Sprintf("%g MHz\n", MHz)
+	return fmt.Sprintf("%g MHz", MHz)
 }
 
 func (GHz Gigahertz) String() string {
-	return fmt.Sprintf("%g GHz\n", GHz)
+	return fmt.Sprintf("%g GHz", GHz)
 }
