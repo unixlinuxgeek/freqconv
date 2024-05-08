@@ -19,8 +19,8 @@ func HzToGHz(h Hertz) Gigahertz {
 
 // Kilohertz to Hertz, Megahertz and Gigahertz converters
 
-// KHzToHertz Kilohertz to Hertz converter
-func KHzToHertz(KHz Kilohertz) Hertz {
+// KHzToHz Kilohertz to Hertz converter
+func KHzToHz(KHz Kilohertz) Hertz {
 	return Hertz(KHz * 1000)
 }
 
