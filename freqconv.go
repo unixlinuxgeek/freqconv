@@ -11,8 +11,8 @@ func (h Hertz) String() string {
 	return fmt.Sprintf("%g Hertz", h)
 }
 
-func (kHz Kilohertz) String() string {
-	return fmt.Sprintf("%g kHz", kHz)
+func (k Kilohertz) String() string {
+	return fmt.Sprintf("%g kHz", k)
 }
 
 func (MHz Megahertz) String() string {
