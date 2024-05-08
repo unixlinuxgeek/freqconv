@@ -9,7 +9,7 @@ import (
 func TestHzToKHz(t *testing.T) {
 	r := Hertz(floatgen.GenRan(1, 9)) // generate random float
 	ok := Kilohertz(r / 1000)         // correct option
-	chk := HzToKHz(r)                 // need to check
+	chk := HzToKHz(r)                 // need to checking
 
 	if ok == chk {
 		t.Logf("Test TestHzToKHz Passed: %v equal %v\n", ok, chk)
@@ -35,7 +35,7 @@ func TestHzToMHz(t *testing.T) {
 func TestHzToGHz(t *testing.T) {
 	r := Hertz(floatgen.GenRan(1, 9)) // generate random float
 	ok := Gigahertz(r / 1e+9)         // correct option
-	chk := HzToGHz(r)
+	chk := HzToGHz(r)                 // need to checking
 
 	if ok == chk {
 		t.Logf("Test TestHzToGHz Passed: %v equal %v\n", ok, chk)
