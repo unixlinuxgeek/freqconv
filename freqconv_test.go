@@ -71,7 +71,7 @@ func TestKHzToMHz(t *testing.T) {
 }
 
 // Kilohertz To Gigahertz converter test
-func TestKhzToGhz(t *testing.T) {
+func TestKHzToGhz(t *testing.T) {
 	r := Kilohertz(floatgen.GenRan(1, 9)) // generate random float
 	ok := Gigahertz(r / 1e+6)             // correct option
 	chk := KhzToGhz(r)                    // need to checking
@@ -83,6 +83,7 @@ func TestKhzToGhz(t *testing.T) {
 	}
 }
 
+// Megahertz to Hertz converter test
 func TestMHzToHz(t *testing.T) {
 	r := Megahertz(floatgen.GenRan(1, 9)) // generate random float
 	ok := Hertz(r * 1e+6)                 // correct option
@@ -108,6 +109,7 @@ func TestMHzToKHz(t *testing.T) {
 	}
 }
 
+// Megahertz to Gigahertz converter test
 func TestMHzToGHz(t *testing.T) {
 	r := Megahertz(floatgen.GenRan(1, 9)) // generate random float
 	ok := Gigahertz(r / 1000)             // correct option
